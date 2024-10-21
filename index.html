@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127891</text></svg>">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
           <tr style="padding:0px">
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p style="text-align:center">
-                <name>Moritz Reuss</name>
+                <name>Nils Blank</name>
               </p>
               <p>I am a PhD student in the <a href="https://irl.anthropomatik.kit.edu/">Intuitive Robots Lab</a> (IRL) at the Karlsruhe Institute of Technology (KIT), Germany.
                 My research focuses on Imitation Learning and Foundation Models for Human-Robot-Interaction. I am supervised by <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>.
@@ -44,45 +44,13 @@
               <heading>Research</heading>
               <p>
                 My research focuses on Foundation Models and their applications in Robotics. In particular, I explore how we can employ Foundation models
-		robustly and reliably in challenging robotic scenarios.
-                Therefore, I am working on novel methods that exploit multimodality and learn versatile behavior.
-                Representative papers are <span class="highlight">highlighted</span>.
+		robustly and reliably in challenging robotic scenarios. Furthermore, my research focuses on goal driven explainability and how we can leverage foundation models for improved human-robot interaction.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div style="display: flex;">
-                  <div style="flex: 0 0 25%; max-width: 25%;">
-                    <img src='images/MoDE_Figure1.png' style="width: 100%; max-width: 100%;">
-                  </div>
-                  <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                    <a href="https://openreview.net/pdf?id=G3mEGSw3eN">
-                      <papertitle>Efficient Diffusion Transformer Policies with Mixture of Expert Denoisers for Multitask Learning</papertitle>
-                    </a>
-                    <br>
-                    <strong>Moritz Reuss*</strong>,
-                    <a href="https://jyopari.github.io/aboutMe.html">Jyothish Pari*</a>,
-                    <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a>,
-                    <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>
-                    <br>
-                    Under review, ICRA Workshop Manipulation Skills 2024
-                    <br>
-                    <a href="https://openreview.net/pdf?id=G3mEGSw3eN">Paper Link</a>
-                    <p></p>
-                    <p>
-                      We propose Mixture-of-Denoising Experts (MoDE) as a novel policy for guided behavior generation, that outperforms dense transformer-based Diffusion Policies in performance, number of parameters and efficiency. 
-                      Our proposed method introduces a novel routing strategy, that conditions the expert selection on the current noise level of the diffusion process. We test MoDE on four established imitation learning benchmarks, including CALVIN and LIBERO. 
-                      In our experiments, MoDE consistently outperforms dense transformer architectures and state-of-the-art baselines. 
-                      In addition, MoDE achieves higher average performance with half of the FLOPS and less parameters compared to the dense transformer diffusion policy.
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
             <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <div style="display: flex;">
@@ -94,15 +62,17 @@
                       <papertitle>Scaling Robot Policy Learning via Zero-Shot Labeling with Foundation Models</papertitle>
                     </a>
                     <br>
-                    Nils Blank,
-                    <strong>Moritz Reuss</strong>,
+                    <strong>Nils Blank</strong>,
+                    Moritz Reuss,
+                    Marcel Rühle,
+                    Ömer Erdinç Yağmurlu,
                     Fabian Wenzel,
-                    <a href="https://www.oiermees.com/">Oier Mees</a> <br>,
-                    <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>,
+                    <a href="https://www.oiermees.com/">Oier Mees</a>, <br>
+                    <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>
                     <br>
-                    Under review, Oral @ 2nd Workshop on Mobile Manipulation and Embodied Intelligence at ICRA 2024
+                    CoRL 2024
                     <br>
-                    <a href="https://openreview.net/pdf?id=Q70XYvUk52">Paper Link</a>
+                    <a href="https://openreview.net/pdf?id=EdVNB2kHv1">Paper Link</a>
                     <p></p>
                     <p>
                       We introduce a novel approach to automatically label uncurated, long-horizon robot teleoperation data at scale in a zero-shot manner without any human intervention. 
@@ -113,184 +83,7 @@
                 </div>
               </td>
             </tr>
-            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-              <tbody>
-                <tr style="background-color: #ffffd0;">
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <div style="display: flex;">
-                      <div style="flex: 0 0 25%; max-width: 25%;">
-                        <img src='images/calvin_mdt.gif' style="width: 100%; max-width: 100%;">
-                      </div>
-                      <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                        <a href="https://intuitive-robots.github.io/mdt_policy/">
-                          <papertitle>Multimodal Diffusion Transformer: Learning Versatile Behavior from Multimodal Goals</papertitle>
-                        </a>
-                        <br>
-                        <strong>Moritz Reuss</strong>,
-                        Ömer Erdinç Yağmurlu,
-                        Fabian Wenzel,
-                        <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>
-                        <br>
-                        <em>Robotics: Science and Systems (RSS)</em>, 2024, 
-			      <em><span style="color:red;">Oral</span></em> @ Workshop on Language and Robot Learning (LangRob)
-                        @ CoRL 2023,
-                        <br>
-                            <a href="https://intuitive-robots.github.io/mdt_policy/">Project Page</a> 
-                            /
-                            <a href="https://github.com/intuitive-robots/mdt_policy">Code </a>
-                            /
-                        <a href="https://arxiv.org/pdf/2407.05996">Arxiv</a>
-                        <p></p>
-                        <p>
-                          We present a novel diffusion policy for learning from uncurated, reward-free offline data with sparse language labels. 
-                          Our method, called Multimodal Diffusion Transformer (MDT), is able to learn complex, long-horizon behaviors and sets a new state-of-the-art on the challenging CALVIN benchmark. 
-                          MDT uses a novel transformer architecture for diffusion policies, that leverages pre-trained vision and language foundation models and aligns multimodal goal-specifications in the latent space of the transformer encoder. 
-                          MDT uses two novel self-supervised auxiliary objectives to better follow goals specified in language and images.
-                        </p>
-                      </div>                      
-                    </div>
-                  </td>
-                </tr>
-                <!-- Second Entry -->
-                <tr>
-                  <td style="padding:20px;width:100%;vertical-align:middle">
-                    <div style="display: flex;">
-                      <div style="flex: 0 0 25%; max-width: 25%;">
-                        <img src='images/d3il_compressed.gif' style="width: 100%; max-width: 100%;">
-                      </div>
-                      <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                        <a href="https://openreview.net/pdf?id=6pPYRXKPpw">
-                          <papertitle>Towards Diverse Behaviors: A Benchmark for Imitation Learning with Human Demonstrations
-                          </papertitle></a>
-                        <br>
-                        <a href="https://irl.anthropomatik.kit.edu/21_78.php">Xiaogang Jia</a>,
-                        <a href="https://alr.anthropomatik.kit.edu/21_495.php">Denis Blessing</a>,
-                        <a href="https://alr.iar.kit.edu/21_500.php">Xinkai Jiang</a>,
-                        <strong>Moritz Reuss</strong>,
-                        Atalay Donat,
-                        <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>,
-                        <a href="https://alr.anthropomatik.kit.edu/21_65.php">Gerhard Neumann</a> <br>
-                        <br>
-                          ICLR 2024
-                          <br>
-                          <a href="https://openreview.net/pdf?id=6pPYRXKPpw">OpenReview</a>
-                          <p></p>
-                          <p>
-                            Introducing D3IL, a novel set of simulation benchmark environments and datasets tailored for Imitation Learning,
-                            D3IL is uniquely designed to challenge and evaluate AI models on their ability to learn and replicate diverse,
-                            multi-modal human behaviors. Our environments encompass multiple sub-tasks and object manipulations, providing a rich
-                            diversity in behavioral data, a feature often lacking in other datasets. We also introduce practical metrics to
-                            effectively quantify a model's capacity to capture and reproduce this diversity. Extensive evaluations of state-of-the-art methods on D3IL offer insightful
-                            benchmarks, guiding the development of future imitation learning algorithms capable of generalizing complex human
-                            behaviors.
-                          </p>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            
-            <tbody>
-              <tr style="background-color: #ffffd0;">
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                    <div style="display: flex;">
-                      <div style="flex: 0 0 25%; max-width: 25%;">
-                        <img src='images/beso_kitchen.gif' style="width: 100%; max-width: 100%;">
-                      </div>
-                        <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                            <a href="https://intuitive-robots.github.io/beso-website">
-                                <papertitle>Goal Conditioned Imitation Learning using Score-based Diffusion Policies</papertitle>
-                            </a>
-                            <br>
-                            <strong>Moritz Reuss</strong>,
-                            <a href="https://irl.anthropomatik.kit.edu/21_67.php">Maximilian Li</a>,
-                            <a href="https://irl.anthropomatik.kit.edu/21_78.php">Xiaogang Jia</a>,
-                            <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>
-                            <br>
-                            <em><span style="color:red; font-weight:bold;">Best Paper Award</span> @ Workshop on Learning from Diverse, Offline Data
-                              (L-DOD) @ ICRA 2023, Robotics: Science and Systems (RSS)</em>, 2023
 
-                            <br>
-                            <a href="https://intuitive-robots.github.io/beso-website">project page</a> 
-                            /
-                            <a href="https://github.com/intuitive-robots/beso">Code </a>
-                            /
-                            <a href="https://arxiv.org/pdf/2304.02532">arXiv</a>
-                            <p></p>
-                            <p>
-                            We present a novel policy representation, called BESO, for goal-conditioned imitation learning using score-based diffusion models.
-                            BESO is able to effectively learn goal-directed, multi-modal behavior from uncurated reward-free offline-data.
-                            On several challening benchmarks our method outperforms current policy representation by a wide margin. 
-                            BESO can also be used as a standard policy for imitation learning and achieves state-of-the-art performance
-                            with only 3 denoising steps. 
-                            </p>
-                        </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div style="display: flex;">
-                  <div style="flex: 0 0 25%; max-width: 25%;">
-                    <img src='images/IMC_obstacle_avoidance.png' style="width: 100%; max-width: 100%;">
-                  </div>
-                  <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                    <a href="https://arxiv.org/pdf/2303.15349">
-                      <papertitle>Information Maximizing Curriculum: A Curriculum-Based Approach for Learning Versatile Skills
-                      </papertitle>
-                    </a>
-                    <br>
-                    <a href="https://alr.anthropomatik.kit.edu/21_495.php">Denis Blessing</a>,
-                    <a href="https://alr.anthropomatik.kit.edu/21_69.php">Onur Celik</a>,
-                    <a href="https://irl.anthropomatik.kit.edu/21_78.php">Xiaogang Jia</a>,
-                    <strong>Moritz Reuss</strong>,
-                    <a href="https://irl.anthropomatik.kit.edu/21_67.php">Maximilian Xiling</a>,
-                    <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>,
-                    <a href="https://alr.anthropomatik.kit.edu/21_65.php">Gerhard Neumann</a> <br>
-                    <br>
-                    <em>Thirty-seventh Conference on Neural Information Processing Systems (NeurIPS) </em>, 2023
-                    <br>
-                    <a href="https://arxiv.org/pdf/2303.15349">arXiv</a>
-                    <p></p>
-                    <p>
-                      We introduce the Information Maximizing Curriculum method to address mode-averaging in imitation learning by enabling
-                      the model to specialize in representable data. This approach is enhanced by a mixture of experts (MoE) policy, each
-                      focusing on different data subsets, and employs a unique maximum entropy-based objective for full dataset coverage.
-                      </p>
-              </td>
-            </tr>
-            <tr style="background-color: #ffffd0;">
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div style="display: flex;">
-                    <div style="flex: 0 0 25%; max-width: 25%;">
-                        <img src='images/panda_dance_scene.gif' style="width: 100%; max-width: 100%;">
-                    </div>
-                    <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                        <a href="https://arxiv.org/pdf/2205.13804">
-                  <papertitle>End-to-End Learning of Hybrid Inverse Dynamics Models for Precise and Compliant Impedance Control</papertitle>
-                </a>
-                <br>
-                <strong>Moritz Reuss</strong>,
-                <a href="https://scholar.google.be/citations?user=OD-ysAcAAAAJ&hl=nl">Niels van Duijkeren</a>, 
-                <a href="https://scholar.google.be/citations?user=OZNzz9gAAAAJ&hl=nl">Robert Krug</a>,
-                <a href="https://alr.anthropomatik.kit.edu/21_72.php">Philipp Becker</a>, 
-                <a href="https://alr.anthropomatik.kit.edu/21_224.php">Vaisakh Shaj</a>, 
-                <a href="https://alr.anthropomatik.kit.edu/21_65.php">Gerhard Neumann</a> <br>
-                <br>
-                <em>Robotics: Science and Systems (RSS)</em>, 2022
-                <br>
-                <a href="https://arxiv.org/pdf/2205.13804">arXiv</a>
-                <p></p>
-                <p>
-                We present a novel hybrid model, combining an differentiable rigid-body model with an recurrent LSTM, to accurately model the inverse dynamics of a robot manipulator.
-                Our novel differentiable formulation of Barycentric parameters enables us to train our model end-to-end jointly with the residual neural network, while implicitly maintaining all requirements for physical consistency.
-                We test our model on a Franka Emika Panda robot and show that it can be used to enable precise and compliant motion tracking.</p>
-              </td>
-            </tr>
-
-
-</tbody>
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
   <tr>
