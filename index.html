@@ -1,100 +1,223 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Symposium on Robot Learning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
 
-  <title>Nils Blank</title>
-  
-  <meta name="author" content="Nils Blank">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>&#127891</text></svg>">
+        }
+        .header {
+            background-image: url('images/image.png'); /* Replace with your image URL */
+            background-size: cover;
+            color: #333;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .header p {
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+        .content {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .content h2 {
+            text-align: center;
+            color: #004c3f;
+        }
+        .schedule {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Center vertically */
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+        .time {
+            color: #666;
+            width: 100px;
+            text-align: right;
+            margin: 10px;
+            margin-right: 20px;
+        }
+        .event {
+            width: calc(100% - 100px);
+        }
+        .event-title {
+            font-weight: bold;
+            margin: 0;
+        }
+        .speaker {
+            color: #666;
+            font-size: 0.9em;
+            margin: 0;
+        }
+
+        .speakers {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.speaker-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.speaker-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.speaker-info {
+    max-width: 800px;
+}
+
+.speaker-name {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #004c3f;
+    margin: 0;
+}
+
+.speaker-title {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 5px;
+}
+
+.speaker-bio {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.white {
+  color: #ffffff;
+  font-family: Lato, sans-serif;
+}
+
+    </style>
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Nils Blank</name>
-              </p>
-              <p>I am a PhD student in the <a href="https://irl.anthropomatik.kit.edu/">Intuitive Robots Lab</a> (IRL) at the Karlsruhe Institute of Technology (KIT), Germany.
-                My research focuses on Imitation Learning and Foundation Models for Human-Robot-Interaction. I am supervised by <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a>.
-              	I obtained my Master's Degree in Computer Science at the KIT.
-                During my studies I interned at SAP SE and IONOS.
-              </p>
 
-              <p style="text-align:center">
-                <a href="mailto:nilsblank1998@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.de/citations?user=DUd7J0YAAAAJ">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/nilsblank/">Github</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/nils-blank-0a2752200/">LinkedIn</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/Nils.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Nils.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                My research focuses on Foundation Models and their applications in Robotics. In particular, I explore how we can employ Foundation models
-		robustly and reliably in challenging robotic scenarios. Furthermore, my research focuses on goal driven explainability and how we can leverage foundation models for improved human-robot interaction.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tbody>
-            <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <div style="display: flex;">
-                  <div style="flex: 0 0 25%; max-width: 25%;">
-                    <img src='images/LUPUS_Overview_Figure.png' style="width: 100%; max-width: 100%;">
-                  </div>
-                  <div style="flex: 0 0 75%; max-width: 75%; padding-left: 20px;">
-                    <a href="https://openreview.net/pdf?id=Q70XYvUk52">
-                      <papertitle>Scaling Robot Policy Learning via Zero-Shot Labeling with Foundation Models</papertitle>
-                    </a>
-                    <br>
-                    <strong>Nils Blank</strong>,
-                    Moritz Reuss,
-                    Marcel Rühle,
-                    Ömer Erdinç Yağmurlu,
-                    Fabian Wenzel,
-                    <a href="https://www.oiermees.com/">Oier Mees</a>, <br>
-                    <a href="http://rudolf.intuitive-robots.net/">Rudolf Lioutikov</a> <br>
-                    <br>
-                    CoRL 2024
-                    <br>
-                    <a href="https://openreview.net/pdf?id=EdVNB2kHv1">Paper Link</a>
-                    <p></p>
-                    <p>
-                      We introduce a novel approach to automatically label uncurated, long-horizon robot teleoperation data at scale in a zero-shot manner without any human intervention. 
-                      We utilize a combination of pre-trained vision-language foundation models to detect objects in a scene, propose possible tasks, segment tasks from large datasets of unlabelled interaction data and then train language-conditioned policies on the relabeled datasets. 
-                      Our initial experiments show that our method enables training language-conditioned policies on unlabeled and unstructured datasets that match ones trained with oracle human annotations.
-                    </p>
-                  </div>
-                </div>
-              </td>
-            </tr>
+<div class="header">
+    <h1 class="white">Symposium on Robot Learning</h1>
+    <p class="white">
+        Intro Text
+    </p>
+</div>
+
+<div class="content">
+  <h2>Tentative schedule</h2>
+  <div class="schedule">
+      <div class="schedule-item">
+          <div class="time">10:00</div>
+          <div class="event">
+              <p class="event-title">Welcome</p>
+          </div>
+      </div>
+      <div class="schedule-item">
+          <div class="time">10:10</div>
+          <div class="event">
+              <p class="event-title">Talk</p>
+              <p class="speaker">Edward Johns (Imperial College London)</p>
+          </div>
+      </div>
+      <div class="schedule-item">
+          <div class="time">10:50</div>
+          <div class="event">
+              <p class="event-title">Talk</p>
+              <p class="speaker">Oier Mees (UC Berkeley)</p>
+          </div>
+      </div>
+      <div class="schedule-item">
+          <div class="time">11:40</div>
+          <div class="event">
+              <p class="event-title">Lunch Break</p>
+          </div>
+      </div>
+      <div class="schedule-item">
+          <div class="time">13:00</div>
+          <div class="event">
+              <p class="event-title">Poster Session</p>
+              <p class="speaker">Robot Learning at KIT</p>
+          </div>
+      </div>
+      <div class="schedule-item">
+          <div class="time">14:00</div>
+          <div class="event">
+              <p class="event-title">Talk</p>
+              <p class="speaker">Katerina Fragkiadaki (CMU)</p>
+          </div>
+      </div>
+      <div class="schedule-item">
+          <div class="time">14:40</div>
+          <div class="event">
+              <p class="event-title">Final Remarks</p>
+          </div>
+      </div>
+  </div>
 
 
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-  <tr>
-      <td style="padding:0px; vertical-align: middle;">
-          <br>
-          <p style="text-align:right;font-size:small;">
-              The website is based on the code from <a href="https://github.com/jonbarron/jonbarron_website">source code</a>!
-          </p>
-      </td>
-  </tr>
-</tbody></table>
+
+  <hr style="margin: 3% 0; border: 0; border-top: 4px solid #ccc;">
+
+    <h2>Speakers</h2>
+    <div class="speakers">
+        <div class="speaker-item">
+            <img src="images/johns.png" alt="Edward Johns" class="speaker-image">
+            <div class="speaker-info">
+                <p class="speaker-name">Edward Johns</p>
+                <p class="speaker-title">Title</p>
+                <p class="speaker-bio">
+                  Bio
+                </p>
+            </div>
+        </div>
+        <div class="speaker-item">
+            <img src="images/mees.jpg" alt="Oier Mees" class="speaker-image">
+            <div class="speaker-info">
+                <p class="speaker-name">Oier Mees</p>
+                <p class="speaker-title">Title</p>
+                <p class="speaker-bio">
+Bio                </p>
+            </div>
+        </div>
+
+        <div class="speaker-item">
+          <img src="images/fragkiadaki.png" alt="Katerina Fragkiadaki" class="speaker-image">
+          <div class="speaker-info">
+              <p class="speaker-name">Katerina Fragkiadaki</p>
+              <p class="speaker-title">Title</p>
+              <p class="speaker-bio">
+                Bio
+              </p>
+          </div>
+      </div>
+</div>
+
+
+
 </body>
-
 </html>
