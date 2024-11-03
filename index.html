@@ -80,20 +80,44 @@
     display: flex;
     align-items: flex-start;
     margin-bottom: 60px;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
 
 .speaker-image {
-    width: 250px;
-    height: 250px;
+    width: 25%; /* Default size as a percentage */
+    max-width: 200px; 
+    height: auto; /* Keeps aspect ratio */
     border-radius: 10%;
-    margin-right: 20px;
+    margin-right: 2%; /* Adds space between image and text */
     object-fit: cover;
-    flex-shrink: 0; /* Prevents the image from shrinking */
+    flex-shrink: 0;
 }
 
 .speaker-info {
+    width: 70%; /* Takes the remaining space next to the image */
     max-width: 800px;
 }
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .speaker-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items on small screens */
+        text-align: center;
+    }
+
+    .speaker-image {
+        width: 50%; /* Adjust image width to half of the container on small screens */
+        max-width: 150px; /* Limit max width */
+        margin-right: 0; /* Remove right margin since items are stacked */
+        margin-bottom: 15px; /* Add spacing below the image */
+    }
+
+    .speaker-info {
+        width: 90%; /* Make text take up most of the width */
+        max-width: 100%; /* Allow text to take full width on small screens */
+    }
+}
+
 
 .speaker-name {
     font-size: 1.4em;
