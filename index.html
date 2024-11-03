@@ -64,9 +64,10 @@
             margin: 0;
         }
         .speaker {
-            color: #666;
-            font-size: 0.9em;
-            margin: 0;
+            color: #004c3f; /* Darker green to match the theme */
+            font-size: 1em; /* Slightly larger font */
+            font-weight: bold; /* Bolder font for emphasis */
+            margin: 5px 0; /* Add spacing around the speaker name */
         }
 
         .speakers {
@@ -112,6 +113,12 @@
     margin-top: 10px;
 
 }
+.abstract {
+    color: #333;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
 
 .white {
   color: #ffffff;
@@ -142,7 +149,10 @@
           <div class="time">10:10</div>
           <div class="event">
               <p class="event-title">Talk</p>
-              <p class="speaker">Edward Johns (Imperial College London)</p>
+              <p class="speaker">Davide Tateo (TU Darmstadt)</p>
+              <p class="abstract">
+                Nowadays, it is clear that we need to incorporate learning methods to develop the robots of the future. However, learning is not enough to empower the robot to deal with challenging real-world scenarios: we need to enable the robots to adapt dynamically to the environment with online learning. To allow online learning in real robotic systems, we need to solve three key challenges: efficient learning, robustness to disturbances, and satisfaction of safety constraints. In this talk, we will discuss these challenges and show how to deploy learning methods in complex contact-rich dynamic tasks such as the robot Air Hockey setting.
+            </p>
           </div>
       </div>
       <div class="schedule-item">
@@ -150,6 +160,9 @@
           <div class="event">
               <p class="event-title">Talk</p>
               <p class="speaker">Oier Mees (UC Berkeley)</p>
+              <p class="abstract">
+                Despite considerable progress in robot learning and contrary to the expectations of the general public, the vast majority of robots deployed out in the real world today continue to remain restricted to a narrow set of preprogrammed behaviors for specific tasks. As robots become ubiquitous across human-centred environments, the need for "generalist" robots grows: how can we scale robot learning systems to generalize and adapt, allowing them to perform a wide range of everyday tasks in unstructured environments based on arbitrary, multimodal instructions from the users? In my work, I have focused on addressing the challenging problems of relating human language to a robot's multimodal perceptions and actions by introducing techniques that leverage self-supervision from uncurated data and common sense reasoning from foundation models from and for robotics.
+              </p>
           </div>
       </div>
       <div class="schedule-item">
@@ -170,6 +183,9 @@
           <div class="event">
               <p class="event-title">Talk</p>
               <p class="speaker">Katerina Fragkiadaki (CMU)</p>
+              <p class="abstract">
+                Humans can successfully handle both mundane and new and rare tasks simply by thinking harder and being more focused. How can we develop robots that think harder and do better in out-of-distribution scenarios? 
+In this talk, we will marry today's generative models and traditional evolutionary search to enable better generalization of robot policies, and the ability to test-time reason through difficult scenarios, akin to a robot system 2. We will discuss learning behaviours from videos with 3D video perception as well as through language instructions and corrections that shape the robots' reward functions on-the-fly, and help us automate robot training data collection in simulators and in the real world. We will also discuss the development of better and faster simulators as universal data engines for robotics.
           </div>
       </div>
       <div class="schedule-item">
@@ -187,12 +203,12 @@
     <h2>Speakers</h2>
     <div class="speakers">
         <div class="speaker-item">
-            <img src="images/johns.png" alt="Edward Johns" class="speaker-image">
+            <img src="images/tateo.png" alt="Davide Tateo" class="speaker-image">
             <div class="speaker-info">
-                <p class="speaker-name">Edward Johns</p>
-                <p class="speaker-title">Title</p>
+                <p class="speaker-name">Davide Tateo</p>
+                <!-- <p class="speaker-title">Title</p> -->
                 <p class="speaker-bio">
-                  Bio
+                    Davide Tateo is a Research Group Leader at the Intelligent Autonomous Systems Laboratory in the Computer Science Department of the Technical University of Darmstadt.  He received his M.Sc. degree in Computer Engineering at Politecnico di Milano in 2014 and his Ph.D. in Information Technology from the same university in 2019.  Davide Tateo worked in many areas of Robotics and Reinforcement Learning, Planning, and Perception. His main research interest is Robot Learning, focusing on high-speed motions, locomotion, and safety.
                 </p>
             </div>
         </div>
@@ -200,8 +216,9 @@
             <img src="images/mees.jpg" alt="Oier Mees" class="speaker-image">
             <div class="speaker-info">
                 <p class="speaker-name">Oier Mees</p>
-                <p class="speaker-title">Title</p>
+                <!-- <p class="speaker-title">Embodied Multimodal Intelligence with Foundation Models</p> -->
                 <p class="speaker-bio">
+                    Oier Mees is a PostDoc at UC Berkeley working with Prof. Sergey Levine. He received his PhD in Computer Science (summa cum laude) in 2023 from the Freiburg University supervised by Prof. Dr. Wolfram Burgard. His research focuses on robot learning, with the goal of enabling robots to intelligently interact with both the physical world and humans, and improve themselves over time. Concretely, he is interested in how we can build self-improving embodied foundation models that can generalize the same way humans do. His research has been nominated for (and received) several Best Paper Awards, including ICRA and RA-L. Previously, he also spent time at NVIDIA AI interning with Dieter Fox.
 Bio                </p>
             </div>
         </div>
@@ -210,9 +227,13 @@ Bio                </p>
           <img src="images/fragkiadaki.png" alt="Katerina Fragkiadaki" class="speaker-image">
           <div class="speaker-info">
               <p class="speaker-name">Katerina Fragkiadaki</p>
-              <p class="speaker-title">Title</p>
+              <!-- <p class="speaker-title">Title</p> -->
               <p class="speaker-bio">
-                Bio
+                Katerina Fragkiadaki is the JPMorgan Chase Associate Professor in the Machine
+Learning Department in Carnegie Mellon University. She received her undergraduate diploma from Electrical and Computer Engineering in the National Technical University of Athens. 
+She received her Ph.D. from University of Pennsylvania and was a postdoctoral fellow in
+UC Berkeley and Google research after that.  Her work focuses on combining
+forms of common sense reasoning, such as spatial understanding and 3D scene understanding, with deep visuomotor learning.  The goal of her work is to enable few-shot learning and continual learning for perception, action and language grounding.  Her  group develops methods for computer vision for mobile agents, 2D and 3D visual parsing, 2D-to-3D perception,  vision-language grounding,  learning of object dynamics, navigation and manipulation policies. Pioneering innovations of her group's research include 2D-to-3D geometry-aware neural networks for 3D understanding from 2D video streams,   analogy-forming networks for memory-augmented few-shot visual parsing, and language-grounding in 2D and 3D scenes with bottom-up and top-down attention.  Her work has been awarded with a best Ph.D. thesis award,  an NSF CAREER award, AFOSR Young Investigator award, a DARPA Young Investigator award, Google, TRI, Amazon, UPMC and Sony faculty research awards. She is a program chair for ICLR 2024.
               </p>
           </div>
       </div>
