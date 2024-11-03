@@ -12,7 +12,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: hsl(0, 0%, 98%);
 
         }
         .header {
@@ -23,7 +23,7 @@
             color: #fff;
             text-align: center;
             padding: 100px 20px;
-            font-family: 'Roboto', sans-serif; /* Apply Roboto to the header */
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
         }
         
         .header::before {
@@ -35,6 +35,8 @@
             height: 100%;
             background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text contrast */
             z-index: 1;
+                        font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+
         }
         
         .header h1 {
@@ -42,10 +44,21 @@
             font-size: 2.8em;
             margin: 0;
             color: #ffffff;
-            font-weight: bold;
+            font-weight: 700;
             z-index: 2;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow for readability */
-            font-family: 'Roboto', sans-serif; /* Apply Roboto to the header */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+
+        }
+        
+        .header .location {
+            position: relative;
+            font-size: 1.2em;
+            color: #e0e0e0;
+            margin-top: 10px;
+            font-weight: 400;
+            z-index: 2;
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
 
         }
         
@@ -56,8 +69,9 @@
             font-size: 1.2em;
             color: #f0f0f0;
             line-height: 1.5;
+            font-weight: 300;
             z-index: 2;
-            font-family: 'Roboto', sans-serif; /* Apply Roboto to the header */
+            font-family: 'Roboto', sans-serif; /* Apply Roboto font */
 
         }
         
@@ -66,10 +80,10 @@
                 padding: 60px 20px;
             }
             .header h1 {
-                font-size: 2em; /* Smaller font size on mobile */
+                font-size: 2em;
             }
-            .header p {
-                font-size: 1em; /* Smaller font size for intro text */
+            .header .location, .header p {
+                font-size: 1em;
             }
         }
         .content {
@@ -208,8 +222,15 @@
 
 <div class="header">
     <h1 class="white">Robot Learning Symposium</h1>
+    <p class="location">Informatikom Karlsruhe, Atrium
+       <br> Adenauerring 12
+        <br>Karlsruhe Institute of Technology
+        <br>Novemer 5, 2024
+    </p> <!-- Location line -->
     <p class="white">
-        Current robotic systems have fallen short of public expectations, with most deployed solutions still operating within confined behavioral boundaries. The transition toward robots functioning seamlessly in everyday environments presents three key research directions that our symposium will explore. First, we need to bridge the gap between rigid programming and flexible task execution, enabling machines to interpret varied user instructions through multimodal interactions. Second, we must develop computational frameworks that mirror human cognitive flexibility, allowing robots to tackle both standard operations and unexpected scenarios with enhanced reasoning capabilities. Third, we need to create systems that continuously refine their skills while maintaining operational safety—a critical requirement for robots performing dynamic tasks in unpredictable environments. Our speakers will showcase pioneering approaches that blend self-supervised learning, large language models, evolutionary computing, and adaptive control strategies to address these fundamental challenges in modern robotics.
+        Current robotic systems have fallen short of public expectations, with most deployed solutions still operating within confined behavioral boundaries. The transition toward robots functioning seamlessly in everyday environments presents three key challenges that our symposium will explore: enabling flexible task execution through multimodal interactions, developing computational frameworks that mirror human cognitive flexibility, and creating systems that continuously refine their skills while maintaining operational safety. 
+        
+        <br><br>Our speakers will showcase pioneering approaches that blend self-supervised learning, large language models, and adaptive control strategies to address these fundamental challenges in modern robotics.
     </p>
 </div>
 
