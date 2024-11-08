@@ -224,7 +224,7 @@
     <h1 class="white">Robot Learning Symposium</h1>
     <p class="location">InformatiKOM Karlsruhe, Atrium
        <br> Adenauerring 12, Karlsruhe Institute of Technology
-        <br>November 5, 2024
+        <br>November 12, 2024
     </p> <!-- Location line -->
     <p class="white">
         Current robotic systems have fallen short of public expectations, with most deployed solutions still operating within confined behavioral boundaries. The transition toward robots functioning seamlessly in everyday environments presents three key challenges that our symposium will explore: enabling flexible task execution through multimodal interactions, developing computational frameworks that mirror human cognitive flexibility, and creating systems that continuously refine their skills while maintaining operational safety. 
@@ -247,8 +247,8 @@
         <div class="time">10:10</div>
         <div class="event">
             <p class="event-title">Talk</p>
-            <p class="talk-title">Embodied Multimodal Intelligence with Foundation Models</p>
-            <p class="speaker">Oier Mees (UC Berkeley)</p>
+            <p class="talk-title">Controllability: the universal language of sequential decision-making</p>
+            <p class="speaker">Caleb Chuck (University of Texas at Austin)</p>
             <p class="abstract">
               Despite considerable progress in robot learning and contrary to the expectations of the general public, the vast majority of robots deployed out in the real world today continue to remain restricted to a narrow set of preprogrammed behaviors for specific tasks. As robots become ubiquitous across human-centred environments, the need for "generalist" robots grows: how can we scale robot learning systems to generalize and adapt, allowing them to perform a wide range of everyday tasks in unstructured environments based on arbitrary, multimodal instructions from the users? In my work, I have focused on addressing the challenging problems of relating human language to a robot's multimodal perceptions and actions by introducing techniques that leverage self-supervision from uncurated data and common sense reasoning from foundation models from and for robotics.
             </p>
@@ -259,42 +259,57 @@
         <div class="time">10:50</div>
         <div class="event">
             <p class="event-title">Talk</p>
-            <p class="talk-title">Systems 1 and 2 for Robot Learning</p>
-            <p class="speaker">Katerina Fragkiadaki (CMU)</p>
+            <p class="talk-title">Efficient Robot Learning and Exploration</p>
+            <p class="speaker">Rika Antonova (Cambridge University)</p>
             <p class="abstract">
-              Humans can successfully handle both mundane and new and rare tasks simply by thinking harder and being more focused. How can we develop robots that think harder and do better in out-of-distribution scenarios? 
-In this talk, we will marry today's generative models and traditional evolutionary search to enable better generalization of robot policies, and the ability to test-time reason through difficult scenarios, akin to a robot system 2. We will discuss learning behaviours from videos with 3D video perception as well as through language instructions and corrections that shape the robots' reward functions on-the-fly, and help us automate robot training data collection in simulators and in the real world. We will also discuss the development of better and faster simulators as universal data engines for robotics.
+                In this talk, I will outline ingredients for enabling efficient robot learning. 
+                First, I will demonstrate how large vision-language models can enhance scene understanding and generalization, 
+                allowing robots to learn general rules from specific examples for handling everyday objects. 
+                Then, I will describe a policy learning method that leverages equivariance to significantly reduce the amount of training data needed for learning from human demonstrations. 
+                Moving beyond learning from demonstrations, we will explore how simulation can enable robots to learn autonomously. 
+                I will describe the challenges and opportunities of bringing differentiable simulators closer to reality, 
+                and contrast direct controller optimization in such adaptive simulators with reinforcement learning in 'black-box' simulators. To further expand robot capabilities, 
+                we will consider adapting hardware. In particular, I will demonstrate how differentiable simulation can be used for learning tool morphology to automatically adapt tools for robots. 
+                Finally, I will outline a vision of how new affordable and robust sensors can aid in learning and control, 
+                how rapid prototyping can enable effective design iterations, and how scaling up exploration would let us tackle the vast design space of optimizing sensing, morphology, actuation,
+                and policy learning jointly. 
+                I will conclude with examples of interdisciplinary collaborations where hardware, control, learning, and vision researchers jointly build solutions greater than the sum of their parts.
         </div>
     </div>
 
       <div class="schedule-item">
-          <div class="time">11:40</div>
+          <div class="time">11:30</div>
           <div class="event">
               <p class="event-title">Lunch Break</p>
           </div>
       </div>
-      <div class="schedule-item">
+      <!-- <div class="schedule-item">
           <div class="time">13:00</div>
           <div class="event">
               <p class="event-title">Poster Session</p>
               <p class="speaker">Robot Learning at KIT</p>
           </div>
-      </div>
+      </div> -->
 
       <div class="schedule-item">
         <div class="time">14:00</div>
         <div class="event">
             <p class="event-title">Talk</p>
-            <p class="talk-title">Safe and Robust Real-World Robot Learning</p>
-            <p class="speaker">Davide Tateo (TU Darmstadt)</p>
+            <p class="talk-title">AI-enabled Robotics: Towards Real-World Applications</p>
+            <p class="speaker">Ajinkya Jain (Google Intrinsic)</p>
             <p class="abstract">
-              Nowadays, it is clear that we need to incorporate learning methods to develop the robots of the future. However, learning is not enough to empower the robot to deal with challenging real-world scenarios: we need to enable the robots to adapt dynamically to the environment with online learning. To allow online learning in real robotic systems, we need to solve three key challenges: efficient learning, robustness to disturbances, and satisfaction of safety constraints. In this talk, we will discuss these challenges and show how to deploy learning methods in complex contact-rich dynamic tasks such as the robot Air Hockey setting.
-          </p>
+                While Foundation models and VLMs show promise for dexterous robot manipulation, 
+                their real-world applications remain limited, with a significant gap between research prototypes and practical demands. 
+                This talk explores how to bridge this divide and achieve Technology Readiness Level (TRL) 7 and above for AI-powered robots. 
+                We argue this is best achieved by combining these methods with the right hardware and infrastructure tools and focusing on building Artificial Specialized Intelligence (ASI) for specific manipulation domains first. 
+                ASI offers key advantages: reduced data dependency, rapid training, and real-time control capabilities suitable for robotics. 
+                With the right tools and a suite of ASIs, we can construct robust and versatile behavior generation models that are not only data-efficient and high-performing, 
+                but also interpretable and reliable in real-world conditions.          </p>
         </div>
     </div>
 
       <div class="schedule-item">
-          <div class="time">14:40</div>
+          <div class="time">14:50</div>
           <div class="event">
               <p class="event-title">Final Remarks</p>
           </div>
@@ -310,37 +325,41 @@ In this talk, we will marry today's generative models and traditional evolutiona
 
 
         <div class="speaker-item">
-            <img src="images/fragkiadaki.png" alt="Katerina Fragkiadaki" class="speaker-image">
+            <img src="images/rika.png" alt="Rika Antonova" class="speaker-image">
             <div class="speaker-info">
-                <p class="speaker-name">Katerina Fragkiadaki</p>
+                <p class="speaker-name">Rika Antonova</p>
                 <!-- <p class="speaker-title">Title</p> -->
                 <p class="speaker-bio">
-                  Katerina Fragkiadaki is the JPMorgan Chase Associate Professor in the Machine
-  Learning Department in Carnegie Mellon University. She received her undergraduate diploma from Electrical and Computer Engineering in the National Technical University of Athens. 
-  She received her Ph.D. from University of Pennsylvania and was a postdoctoral fellow in
-  UC Berkeley and Google research after that.  Her work focuses on combining
-  forms of common sense reasoning, such as spatial understanding and 3D scene understanding, with deep visuomotor learning.  The goal of her work is to enable few-shot learning and continual learning for perception, action and language grounding.  Her  group develops methods for computer vision for mobile agents, 2D and 3D visual parsing, 2D-to-3D perception,  vision-language grounding,  learning of object dynamics, navigation and manipulation policies. Pioneering innovations of her group's research include 2D-to-3D geometry-aware neural networks for 3D understanding from 2D video streams,   analogy-forming networks for memory-augmented few-shot visual parsing, and language-grounding in 2D and 3D scenes with bottom-up and top-down attention.  Her work has been awarded with a best Ph.D. thesis award,  an NSF CAREER award, AFOSR Young Investigator award, a DARPA Young Investigator award, Google, TRI, Amazon, UPMC and Sony faculty research awards. She is a program chair for ICLR 2024.
+                    Rika Antonova is an Associate Professor at the University of Cambridge. Her research interests include data-efficient reinforcement learning algorithms, active learning & exploration​, ​and ​robotics.
+                    Earlier, Rika was a postdoctoral scholar at Stanford University upon receiving the NSF/CRA Computing Innovation Fellowship from the US National Science Foundation. 
+                    Rika completed her PhD at KTH, Stockholm in the division of "Robotics, Perception, and Learning". Earlier, she obtained a research Master's degree from the Robotics Institute at Carnegie Mellon University. 
+                    Before that, Rika was a senior software engineer at Google in the Search Personalization team and then in the Character Recognition team (developing open-source OCR engine Tesseract).
                 </p>
             </div>
         </div>
 
         <div class="speaker-item">
-            <img src="images/tateo.png" alt="Davide Tateo" class="speaker-image">
+            <img src="images/ajinkya.png" alt="Ajinkya Jain" class="speaker-image">
             <div class="speaker-info">
-                <p class="speaker-name">Davide Tateo</p>
+                <p class="speaker-name">Ajinkya Jain</p>
                 <!-- <p class="speaker-title">Title</p> -->
                 <p class="speaker-bio">
-                    Davide Tateo is a Research Group Leader at the Intelligent Autonomous Systems Laboratory in the Computer Science Department of the Technical University of Darmstadt.  He received his M.Sc. degree in Computer Engineering at Politecnico di Milano in 2014 and his Ph.D. in Information Technology from the same university in 2019.  Davide Tateo worked in many areas of Robotics and Reinforcement Learning, Planning, and Perception. His main research interest is Robot Learning, focusing on high-speed motions, locomotion, and safety.
+                    Ajinkya Jain is a senior robotics researcher at Intrinsic, an Alphabet company. His research focuses on developing and applying robot learning methods for dexterous robot manipulation. 
+                    Before joining Intrinsic, he received his Ph.D. in Robotics from the University of Texas at Austin, 
+                    where he focused on algorithms for learning object interaction models from visual data and robust motion planning strategies for manipulating them under uncertainty.
                 </p>
             </div>
         </div>
         <div class="speaker-item">
-            <img src="images/mees.jpg" alt="Oier Mees" class="speaker-image">
+            <img src="images/caleb.png" alt="Caleb Chuck" class="speaker-image">
             <div class="speaker-info">
-                <p class="speaker-name">Oier Mees</p>
+                <p class="speaker-name">Caleb Chuck</p>
                 <!-- <p class="speaker-title">Embodied Multimodal Intelligence with Foundation Models</p> -->
                 <p class="speaker-bio">
-                    Oier Mees is a PostDoc at UC Berkeley working with Prof. Sergey Levine. He received his PhD in Computer Science (summa cum laude) in 2023 from the Freiburg University supervised by Prof. Dr. Wolfram Burgard. His research focuses on robot learning, with the goal of enabling robots to intelligently interact with both the physical world and humans, and improve themselves over time. Concretely, he is interested in how we can build self-improving embodied foundation models that can generalize the same way humans do. His research has been nominated for (and received) several Best Paper Awards, including ICRA and RA-L. Previously, he also spent time at NVIDIA AI interning with Dieter Fox.
+                    Caleb Chuck is a PhD student at the University of Texas at Austin studying Computer Science. 
+                    He is working in the Personal Autonomous Robotics Lab (PeARL) with Professor Scott Niekum. 
+                    He is interested in better understanding how robots can complement humans. 
+                    He is developing hierarchical object-centric methods to improve robotic manipulation.
                 </p>
             </div>
         </div>
